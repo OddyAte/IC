@@ -20,6 +20,8 @@ x7 = [195, 41]
 x8 = [43, 87]
 x9 = [190, 40]
 
+lista = [x1,x2,x3,x4,x5,x6,x7,x8,x9]
+
 p1 = [40, 45]
 p2 = [40, 90]
 p3 = [210, 50]
@@ -44,25 +46,8 @@ while (counter < 10):
     count = 1
     x = [0, 0]
 
-    while count < 10:
-        if count == 1:
-            x = x1
-        if count == 2:
-            x = x2
-        if count == 3:
-            x = x3
-        if count == 4:
-            x = x4
-        if count == 5:
-            x = x5
-        if count == 6:
-            x = x6
-        if count == 7:
-            x = x7
-        if count == 8:
-            x = x8
-        if count == 9:
-            x = x9
+    for i in range (0,9):
+        x = lista[i]
 
         print("x", x, "|  \t", distanta(x, p1), "  \t|  \t", distanta(x, p2), "  \t|\t", distanta(x, p3), "\t  |\t  ",
               end="")
