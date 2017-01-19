@@ -29,10 +29,8 @@ p3 = [210, 50]
 counter = 1
 
 while (counter < 10):
-    print("\n****************************************************************************")
     print("Iteratia numarul", counter)
-    print(p1,p2,p3)
-    print("****************************************************************************")
+    print("Centroizi:",p1,",",p2,",",p3)
     print("\t\t\t    Distanta1" + "\t\tDistanta2" + "\t    Distanta3" + "\t\tCluster")
 
     count1 = 0
@@ -66,7 +64,6 @@ while (counter < 10):
             for i in range(0, 2):
                 c3[i] += x[i]
             count3 += 1
-        count += 1
     for i in range(0, 2):
         c1[i] /= count1
         c1[i] = float("%.2f" % c1[i])
@@ -78,6 +75,7 @@ while (counter < 10):
     print("Centroid 1:", c1)
     print("Centroid 2:", c2)
     print("Centroid 3:", c3)
+    print()
 
     if p1[0] == c1[0] and p1[1] == c1[1] and p2[0] == c2[0] and p2[1] == c2[1] and p3[0] == c3[0] and p3[1] == c3[1]:
         break
